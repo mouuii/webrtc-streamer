@@ -1150,7 +1150,7 @@ PeerConnectionManager::PeerConnectionObserver *PeerConnectionManager::CreatePeer
 	config.type = m_transportType;
 
 	// Use example From https://soru.site/questions/51578447/api-c-webrtcyi-kullanarak-peerconnection-ve-ucretsiz-baglant-noktasn-serbest-nasl
-	int minPort = 0;
+	int minPort = 65000;
 	int maxPort = 65535;
 	std::istringstream is(m_webrtcPortRange);
 	std::string port;
